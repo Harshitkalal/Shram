@@ -1,0 +1,67 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "com.kvsn.builds.cap1"
+        minSdkVersion 19
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    testImplementation 'junit:junit:4.12'
+    //noinspection GradleCompatible
+    //androidTestImplementation 'com.android.support.RecruiterMain:runner:1.0.2'
+    //androidTestImplementation 'com.android.support.RecruiterMain.espresso:espresso-core:3.0.2'
+
+    //app default implementations
+    //noinspection GradleCompatible
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    //implementation 'com.google.android.material:material:1.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.1.3'
+
+    //firebase libraries impleentation
+    implementation 'com.google.firebase:firebase-core:16.0.5'
+    implementation 'com.google.firebase:firebase-messaging:17.3.4'
+    implementation 'com.google.firebase:firebase-auth:16.0.5'
+    implementation 'com.google.firebase:firebase-database:16.0.5'
+    implementation 'com.google.firebase:firebase-storage:16.0.5'
+
+    //google play services
+    //implementation 'com.google.android.gms:play-services-auth:16.0.1'
+    implementation 'com.google.android.gms:play-services-maps:16.0.0'
+    implementation 'com.google.android.gms:play-services-places:16.0.0'
+    implementation 'com.google.android.gms:play-services-location:16.0.0'
+
+    //third party libraries implementations
+    //for custom navigation drawer from Psd company github
+    implementation 'nl.psdcompany:duo-navigation-drawer:2.0.8'
+    //for picasso , to display image in image views directly from the web / firebase storage
+    implementation 'com.squareup.picasso:picasso:2.71828'
+    implementation 'com.facebook.android:facebook-android-sdk:4.37.0' //for facebook login
+    implementation 'de.hdodenhof:circleimageview:2.2.0' //for circular image
+    implementation 'com.andkulikov:transitionseverywhere:1.8.0' //for transistions
+    implementation 'com.github.traex.rippleeffect:library:1.3' //for Ripple Effect On click
+    implementation 'net.steamcrafted:materialiconlib:1.1.5' //for material icons
+    implementation 'com.theartofdev.edmodo:android-image-cropper:2.7.+' //for selecting Image
+    implementation 'com.squareup.picasso:picasso:2.71828' //for picasso
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1' //for picasso transformation
+    implementation 'com.github.bumptech.glide:glide:3.7.0' //for loading image alternate
+    implementation 'com.android.volley:volley:1.1.1' //volley JSON
+    implementation 'com.geniusforapp.fancydialog:FancyDialog:0.1.4'
+//for alert dialog of internet connection
+}

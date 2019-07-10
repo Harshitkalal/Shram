@@ -1,0 +1,13 @@
+<resources>
+     <string name="app_name">Capstone All Working Modules And Libraries</string>
+     <array name="menuOptions">
+	  <item>Home</item>
+	  <item>Profile</item>
+	  <item>Settings</item>
+	  <item>Info / Help</item>
+     </array>
+
+     <string name="facebook_app_id">2166068723711987</string>
+     <string name="fb_login_protocol_scheme">fb2166068723711987</string>
+</resources>
+

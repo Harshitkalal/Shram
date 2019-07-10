@@ -1,0 +1,13 @@
+<resources>
+     <string name="app_name">Shram</string>
+     <array name="menuOptions">
+	  <item>Home</item>
+	  <item>Profile</item>
+	  <item>About Us</item>
+     </array>
+     <string name="noconnection">Kindly connect to a WIFI network or enable Mobile Data</string>
+     <string name="facebook_app_id">2166068723711987</string>
+     <string name="fb_login_protocol_scheme">fb2166068723711987</string>
+     <string name="title_activity_maps">Map</string>
+</resources>
+

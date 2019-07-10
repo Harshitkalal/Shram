@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     xmlns:tools="http://schemas.android.com/tools"
+     android:layout_width="match_parent"
+     android:transitionGroup="true"
+     android:orientation="vertical"
+     android:layout_height="match_parent"
+     tools:context=".PhotoUpload">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+	  android:layout_marginTop="40dp"
+	  android:layout_width="250dp"
+	  app:civ_border_width="2dp"
+	  android:transitionName="trans1"
+	  android:id="@+id/uploadimage"
+	  app:civ_border_color="@color/headings"
+	  android:layout_height="250dp"
+	  android:src="@drawable/profile"
+	  android:layout_gravity="center"/>
+
+     <LinearLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="wrap_content"
+	  android:layout_marginTop="20dp"
+	  android:orientation="horizontal">
+	  <Button
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:layout_weight="1"
+	       android:id="@+id/chooseimage"
+	       android:onClick="chooseimage"
+	       android:backgroundTint="#FFA726"
+	       android:text="Select Picture"/>
+	  <Button
+	       android:layout_width="wrap_content"
+	       android:layout_height="wrap_content"
+	       android:id="@+id/uploadpic"
+	       android:layout_weight="1"
+	       android:backgroundTint="#FFA726"
+	       android:onClick="uploadimage"
+	       android:text="Upload Picture"/>
+
+     </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:layout_width="match_parent"
+     android:layout_height="200dp"
+     android:background="@drawable/cover"
+     android:orientation="horizontal"
+     android:theme="@style/Theme.Design.NoActionBar"
+     android:transitionGroup="true">
+
+     <de.hdodenhof.circleimageview.CircleImageView
+	  android:id="@+id/image_header"
+	  android:layout_width="125dp"
+	  android:layout_height="150dp"
+	  android:layout_marginLeft="25dp"
+	  android:layout_marginTop="25dp"
+	  android:layout_marginBottom="25dp"
+	  android:scaleType="centerCrop"
+	  android:src="@drawable/profile"
+	  android:transitionName="trans1"
+	  app:civ_border_color="@color/colorPrimary"
+	  app:civ_border_width="2dp" />
+
+     <LinearLayout
+	  android:layout_width="wrap_content"
+	  android:orientation="vertical"
+	  android:layout_marginLeft="10dp"
+	  android:layout_height="wrap_content">
+     <TextView
+	  android:layout_width="wrap_content"
+	  android:layout_height="wrap_content"
+	  android:id="@+id/header_name"
+	  android:layout_marginTop="75dp"
+	  android:fontFamily="@font/castro"
+	  android:text="Vishnu Sai Nath Karumuri"
+	  android:textColor="@color/white"
+	  android:textSize="15dp" />
+     <TextView
+	  android:layout_width="wrap_content"
+	  android:id="@+id/header_mail"
+	  android:textColor="@color/white"
+	  android:layout_marginTop="10dp"
+	  android:fontFamily="sans-serif"
+	  android:layout_height="wrap_content"
+	  android:text="vishnusai.karumuri@gmail.com"/>
+     </LinearLayout>
+
+</LinearLayout>

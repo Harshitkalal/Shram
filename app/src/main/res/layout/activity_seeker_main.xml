@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout
+     xmlns:android="http://schemas.android.com/apk/res/android"
+     xmlns:app="http://schemas.android.com/apk/res-auto"
+     android:id="@+id/drawer"
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:windowSharedElementsUseOverlay="false">
+
+     <nl.psdcompany.duonavigationdrawer.views.DuoMenuView
+	  xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto"
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:orientation="vertical"
+	  android:tag="@string/tag_menu"
+	  app:footer="@layout/duo_view_footer"
+	  app:header="@layout/header" />
+
+     <LinearLayout
+	  android:layout_width="match_parent"
+	  android:layout_height="match_parent"
+	  android:orientation="vertical"
+	  android:tag="@string/tag_content">
+
+	  <android.support.v7.widget.Toolbar
+	       android:id="@+id/toolbar"
+	       android:layout_width="match_parent"
+	       android:layout_height="?attr/actionBarSize"
+	       android:background="@color/colorPrimary"
+	       android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+	       app:popupTheme="@style/ThemeOverlay.AppCompat.Light" />
+
+	  <FrameLayout
+	       android:id="@+id/container"
+	       android:layout_width="match_parent"
+	       android:layout_height="match_parent"
+	       android:background="@android:color/white"
+	       android:padding="?attr/listPreferredItemPaddingRight">
+
+	       <LinearLayout
+		    android:layout_width="match_parent"
+		    android:layout_height="match_parent"
+		    android:orientation="vertical">
+
+		    <RelativeLayout
+			 android:layout_width="match_parent"
+			 android:layout_height="405dp">
+
+			 <LinearLayout
+			      android:layout_width="match_parent"
+			      android:layout_height="350dp"
+			      android:background="@drawable/gradientbackground"
+			      android:orientation="vertical">
+
+			      <de.hdodenhof.circleimageview.CircleImageView
+				   android:layout_width="150dp"
+				   android:layout_height="150dp"
+				   android:layout_gravity="center_horizontal"
+				   android:layout_marginTop="45dp"
+				   android:id="@+id/Img_profile_Seeker"
+				   android:src="@drawable/profile" />
+
+			      <TextView
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:layout_gravity="center_horizontal"
+				   android:layout_marginTop="10dp"
+				   android:text="Name"
+				   android:id="@+id/Seeker_name"
+				   android:textColor="#fff"
+				   android:textSize="21sp"
+				   android:textStyle="bold" />
+
+			 </LinearLayout>
+
+			 <android.support.v7.widget.CardView
+			      android:layout_width="360dp"
+			      android:layout_height="100dp"
+			      android:layout_centerHorizontal="true"
+			      android:layout_marginTop="285dp">
+
+			      <LinearLayout
+				   android:layout_width="match_parent"
+				   android:layout_height="match_parent"
+				   android:orientation="horizontal"
+				   android:weightSum="3">
+
+				   <LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:text="Experience"
+					     android:textSize="20sp" />
+
+					<TextView
+					     android:id="@+id/exp"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:paddingTop="10dp"
+					     android:text="0"
+					     android:textColor="@color/startblue"
+					     android:textSize="20sp"
+					     android:textStyle="bold" />
+				   </LinearLayout>
+
+				   <LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:text="Category"
+					     android:textSize="20sp" />
+
+					<TextView
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:paddingTop="10dp"
+					     android:id="@+id/Seeker_type"
+					     android:textColor="@color/startblue"
+					     android:textSize="20sp"
+					     android:textStyle="bold" />
+				   </LinearLayout>
+
+				   <LinearLayout
+					android:layout_width="0dp"
+					android:layout_height="match_parent"
+					android:layout_weight="1"
+					android:gravity="center"
+					android:orientation="vertical">
+
+					<TextView
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:text="New Work"
+					     android:textSize="20sp" />
+
+					<TextView
+					     android:id="@+id/new_work"
+					     android:layout_width="wrap_content"
+					     android:layout_height="wrap_content"
+					     android:paddingTop="10dp"
+					     android:text="0"
+					     android:textColor="@color/startblue"
+					     android:textSize="20sp"
+					     android:textStyle="bold" />
+				   </LinearLayout>
+
+			      </LinearLayout>
+			 </android.support.v7.widget.CardView>
+		    </RelativeLayout>
+
+
+
+
+		    <LinearLayout
+			 android:layout_width="360dp"
+			 android:layout_height="wrap_content"
+			 android:orientation="vertical"
+			 android:background="@color/white"
+			 android:layout_gravity="center"
+			 android:layout_marginTop="15dp">
+			 <LinearLayout
+			      android:paddingLeft="45dp"
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content">
+			      <ImageView
+				   android:layout_width="56dp"
+				   android:layout_height="56dp"
+				   android:paddingLeft="20dp"
+				   android:src="@drawable/aadhar"/>
+			      <TextView
+				   android:layout_gravity="center_vertical"
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:textSize="15sp"
+				   android:text="XXX-XXXX-XXXX"
+				   android:id="@+id/Seeker_adhar_no"
+				   android:paddingLeft="20dp"/>
+			 </LinearLayout>
+
+			 <LinearLayout
+			      android:paddingLeft="45dp"
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content">
+			      <ImageView
+				   android:layout_width="56dp"
+				   android:layout_height="56dp"
+				   android:paddingLeft="20dp"
+				   android:src="@drawable/ic_tablet_android_black_24dp"/>
+			      <TextView
+				   android:layout_gravity="center_vertical"
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:text="+91 98761321654"
+				   android:id="@+id/Seeker_mob_no"
+				   android:textSize="15sp"
+				   android:paddingLeft="20dp"/>
+			 </LinearLayout>
+			 <LinearLayout
+			      android:paddingLeft="45dp"
+			      android:layout_width="match_parent"
+			      android:layout_height="wrap_content">
+			      <ImageView
+				   android:layout_width="46dp"
+				   android:layout_height="46dp"
+				   android:paddingLeft="20dp"
+				   android:src="@drawable/ic_forum_black_24dp"/>
+			      <TextView
+				   android:layout_gravity="center_vertical"
+				   android:layout_width="wrap_content"
+				   android:layout_height="wrap_content"
+				   android:id="@+id/textviewcomments"
+				   android:onClick="showComments"
+				   android:text="show all comments"
+				   android:textSize="15sp"
+				   android:paddingLeft="20sp"/>
+			 </LinearLayout>
+		    </LinearLayout>
+	       </LinearLayout>
+	  </FrameLayout>
+     </LinearLayout>
+
+</nl.psdcompany.duonavigationdrawer.views.DuoDrawerLayout>
